@@ -1,3 +1,9 @@
 html{
     background-color: aqua;
 }
+.lista{
+    background-color: antiquewhite;
+    border-radius: 2%;
+    position: fixed;
+    font-weight: 200;
+}
