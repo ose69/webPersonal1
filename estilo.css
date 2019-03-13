@@ -1,9 +1,51 @@
+/*https://colorhunt.co/palette/131265*//*estilos de colores*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
 html{
-    background-color: aqua;
+    background-color:#f2f7ff;
 }
-.lista{
-    background-color: antiquewhite;
-    border-radius: 2%;
-    position: fixed;
-    font-weight: 200;
-}
+nav {
+    position : absolute;
+    left : 0;
+    width : 100%;
+    /*background : url(Desktop/nav_background.png);*/
+    background-color:#10316b;
+    }
+    nav ul {
+    margin : 0 auto;
+    width : 1300px;
+    list-style : none;
+    }
+    nav ul li {
+    float : left;
+    }
+    nav ul li a {
+    display : block;
+    margin-right : 20px;
+    width : 140px;
+    font-size : 14px;
+    line-height : 44px;
+    text-align : center;
+    text-decoration : none;
+    color : #ccc;
+
+    }
+    nav ul li a:hover {
+    color : #fff;
+    }
+    nav ul li.selected a {
+    color : #fff;
+    }
+    aside{
+        transform: translate(0px, 90px);
+        height: 700px;
+        background-color: #ffe867;
+        width: 26%;
+        border-radius:2px; 
+    }
+    section{
+        background-color: red;
+        transform: translate(20px)
+    }
