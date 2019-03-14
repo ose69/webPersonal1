@@ -3,15 +3,17 @@
     padding: 0%;
     margin: 0%;
 }
-html{
+html body{
     background-color:#f2f7ff;
+    display: flex;
+    display: block;
 }
 nav {
     position : absolute;
     left : 0;
     width : 100%;
     /*background : url(Desktop/nav_background.png);*/
-    background-color:#10316b;
+    background-color:#0b409c;
     }
     nav ul {
     margin : 0 auto;
@@ -25,7 +27,8 @@ nav {
     display : block;
     margin-right : 20px;
     width : 140px;
-    font-size : 14px;
+    font-size : 25px;
+    font-style: times;s
     line-height : 44px;
     text-align : center;
     text-decoration : none;
@@ -40,12 +43,24 @@ nav {
     }
     aside{
         transform: translate(0px, 90px);
-        height: 700px;
+        height: 980px;
         background-color: #ffe867;
         width: 26%;
-        border-radius:2px; 
+        border-radius:2px;
     }
     section{
-        background-color: red;
-        transform: translate(20px)
+        background-color:#f2f7ff;
+        transform: translate(494px,89px);
+        height: 980px;
+        margin-top: -980px;
     }
+    footer{
+        background-color: #10316b;
+        transform: translate(0px, 88px);
+        height:3cm ;
+        color: #f2f7ff;
+        font-style:times;
+        font-size: 18px;
+        text-align: center;
+    }
+ 
