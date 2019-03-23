@@ -1,0 +1,104 @@
+/*centrando contenido del cuerpo*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body .order{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    font-family:'Raleway', sans-serif;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    /*background:#115173;*/
+    background: url(pensar.jpg);
+    width:100%;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    
+}
+
+/*cwntrando lista y haciendola flexible*/
+ul{
+    transform: translate(-66px);
+    margin-top: -43%;
+    padding: 0;
+    display:flex;
+}
+/*quitando estilo predeterminado de los elementos de la lista, al igual como espacio entre los elementos con el margin*/
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+    right: 5%;
+}
+/*dandole estilo al texto, font family, es la fuente, color blanco de letra etc. text transform: upper case es para letras mayúsculas TRANSITIO: agrega transición al texto*/
+ul li a{
+display: block;
+position: relative;
+text-decoration: none;
+padding: 5px;
+font-size: 28px;
+font-family: sans-serif;
+color: #fff;
+text-transform: uppercase;
+transition: 0.5s;
+}
+/*efectos a los elemtos de la lista>opacity: da opasidad al color del texto cuando al click FILTER: hace borrosas las letras*/
+ul:hover li a{
+transform: scale(1.5);
+opacity: .2;
+filter: blur(5px);
+}
+/*efectos a los elementos del texto a> opacity: da opacidad al texto filter: quita la opasidad al momento del click*/
+ul li a:hover{
+transform: scale(1);
+opacity: 1;
+filter:blur(0);
+}
+/*a:before: estilo al efecto rosa al click> content: nose para que sirve :V, pero va de la mano de position transform: pone toda la barra rosa en 2 z-index: hace transparente el color*/
+/*transform: scaleX> le quita el efecto rosa*/
+ul li a:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ffd700;
+transition:transform 0.5s;
+transform-origin: right;
+transform: scaleX(0);
+z-index: -1;
+}
+/*a:hover:before>efectos antes del click> transform-orign : le da el efecto de transición al momento del click, a la izquierda transform: scaleX(1): da el color rosa*/
+ul li a:hover:before{
+transition:transform 0.5s;
+transform-origin: left;
+transform: scaleX(1);
+}
+.order{
+    height: 100px;
+    width: 800px;
+    text-align: center;
+    background-color: aqua;
+}
+.caja{
+    height:50px;
+    width:100%;
+     margin:0px auto;
+    background-color:rgb(61, 47, 255);
+    float: left;
+    margin-top: -40%;
+    
+}
+.caja h1{
+ color: #fff;
+ font-size: 27px;
+ text-transform: lowercase;
+}
+.caja p{
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+}
